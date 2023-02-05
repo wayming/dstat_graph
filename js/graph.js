@@ -6,7 +6,7 @@ function dsk_total_data(data) {
   for (var idata in data) {
     var ldata = data[idata];
     /* Byte to MB */
-    data[idata].y = Math.round((data[idata].y / (1024 * 1024) ));
+    data[idata].y = Math.round((data[idata].y / (1024) ));
   }
 
   return data;
@@ -49,7 +49,7 @@ function net_total_data(data) {
   for (var idata in data) {
     ldata = data[idata];
     /* Byte to MB */
-    data[idata].y = Math.round((data[idata].y / (1024 * 1024)));
+    data[idata].y = Math.round((data[idata].y / (1024)));
   }
 
   return data;
@@ -71,7 +71,7 @@ function memory_usage_data(data) {
   for (var idata in data) {
     var ldata = data[idata];
     /* Byte to MB */
-    data[idata].y = Math.round((data[idata].y / (1024 * 1024) ));
+    data[idata].y = Math.round((data[idata].y / (1024) ));
   }
 
   return data;
